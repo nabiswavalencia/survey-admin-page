@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+   background-color: rgb(245, 239, 239);
+  }
+  .my-page{
+  
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(4, minmax(0, 1fr)) ;
+    row-gap: 100px;
+    column-gap: 20px;
+  }
+  .side-bar{
+    margin-left: 0px;
+  display: flex;
+  justify-content: end;
+  grid-column: span 1;
+  grid-row: span 3;
+  }
+  a{
+    text-decoration: none;
+    cursor: pointer;
+    font-size: large;
+    color: gray;
+    font-weight: 100;
+  }
+  #dropdown h1{
+    color:rgb(162, 159, 159);
+    text-align: left;
+    font-weight: bold;
+    padding: 4px;
+    font-size: x-large;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  #dropdown{
+    margin: 0 20px ;
+  }
+  ul{
+    padding-top: 20px;
+    list-style: none;
+    line-height: 25px;
+    text-align: right;
+    
+  }
+  li{
+    padding: 4px;
+  }
+  #analytics{
+    border-right: 5px rgb(245, 58, 58) solid;
+    padding: 2px;
+  }
+  #analytics a{
+    color: rgb(91, 89, 89);
+    font-weight: 900;
+    
+  }
+  .analytics-body{
+    margin-top: 40px;
+    grid-column: span 2;
+  }
+  #analyticsSamples{
+   display: flex;
+   justify-content: space-between;  
+  align-items: center;
+  margin-top: 30px;
+}
+  
+  #bySurveys , #byQuestion{
+ cursor: pointer;
+  padding: 5px;
+  height: 350px;
+  width: 350px;
+  text-align: center;
+  margin: auto;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  }
+
+  #analyticsSamples :hover{
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+
+  .my-page-footer{
+    grid-column-start: 1;
+    
+  }
