@@ -5,20 +5,19 @@
 }
 
 body{
- background-color: rgb(245, 239, 239);
+ background-color:#F2F2F2;
 }
 .my-page{
   
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-template-rows: repeat(4, minmax(0, 1fr)) ;
-  row-gap: 100px;
-  column-gap: 20px;
+  row-gap: 10px;
+  column-gap: 2px;
 }
 .side-bar{
-  margin-left: 0px;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   grid-column: span 1;
   grid-row: span 3;
 }
@@ -33,12 +32,12 @@ a{
   color:rgb(162, 159, 159);
   text-align: left;
   font-weight: bold;
-  padding: 4px;
+  padding-top: 30px;
   font-size: x-large;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #dropdown{
-  margin: 0 20px ;
+  margin: 0 100px ;
 }
 ul{
   padding-top: 20px;
@@ -62,26 +61,31 @@ li{
   
 }
 .surveys-body{
-  display: block;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
   margin-top: 40px;
-  grid-column: span 2;
-}
+  grid-column: span 2;}
+
 .my-page-footer{
   grid-column-start: 1;
 }
 .surveysDone{
-    width: max-content;
+    min-width: 600px;
     background-color: #F2F2F2;
     margin: 10px ;
     overflow: auto;
-    min-height: 400px;
     border: 1px solid rgb(236, 239, 242);
-    padding: 30px;
+    padding:5px 30px;
     border-radius: 5px;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
-    align-items: center;
+    justify-content: center;
   flex-direction: column;
+}
+.surveysDone h2{
+   padding-left: 15px;
+   padding-bottom: 20px;
 }
 #surveySample{
   display: flex;
@@ -91,26 +95,37 @@ li{
   
 }
 section h1{
-  border: 1px black solid;
-  padding: 5px;
+  height: 150px;
+  padding-top: 25px;
+  padding-left: 20px;
   border-radius: 5px;
   width: 500px;
-  
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);  margin-top: 10px;
+  cursor: pointer;
+}
+
+section :hover{
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+}
+button :hover{
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
 }
 #createNew{
   display: flex;
   justify-content: center;
   margin-top: 30px ;
-  
+  height: fit-content;
   padding: 10px;
   text-align: center;
-  border: 1px black solid;
   width: fit-content;
   flex-direction: column;
   border-radius: 5px;
-
-
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  cursor: pointer;
 }
+
 button{
   width: fit-content;
   align-self: center;
